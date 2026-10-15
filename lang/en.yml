@@ -1,0 +1,3 @@
+en:
+  SilverShop\ConversionTracking\Google\GoogleProvider:
+    NAME: 'Google (GA4 + Ads)'

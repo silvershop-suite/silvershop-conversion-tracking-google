@@ -1,0 +1,16 @@
+---
+Name: silvershop-conversion-tracking-google
+After:
+  - '#silvershop-conversion-tracking'
+---
+# Register + switch on the Google connector. It stays inert until SS_GA4_MEASUREMENT_ID (and/or
+# SS_GOOGLE_ADS_CONVERSION_ID) is set, so "installed" safely means "enabled once configured".
+SilverShop\ConversionTracking\Provider\ConversionProviderRegistry:
+  providers:
+    google: '%$SilverShop\ConversionTracking\Google\GoogleProvider'
+  active:
+    - google
+
+SilverShop\ConversionTracking\Google\GoogleProvider:
+  # datalayer_only | built_in_tags | both (default both: gtag + the core's always-on dataLayer).
+  mode: both
