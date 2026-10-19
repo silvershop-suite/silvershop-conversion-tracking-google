@@ -1,6 +1,6 @@
 # SilverShop Conversion Tracking — Google connector
 
-Google connector for [`silvershop/conversion-tracking`](https://github.com/silvershop/silvershop-conversion-tracking).
+Google connector for [`silvershop-suite/conversion-tracking`](https://github.com/silvershop/silvershop-conversion-tracking).
 It implements the core's `ConversionProvider` seam for Google, client-side via `gtag`:
 
 - **GA4 ecommerce** — `view_item` / `add_to_cart` / `begin_checkout` / `purchase`, with `items[]`, `value`,
@@ -8,7 +8,7 @@ It implements the core's `ConversionProvider` seam for Google, client-side via `
 - **Google Ads** — a conversion on purchase (`gtag('event','conversion',{send_to:'AW-ID/LABEL',…})`).
 - **Enhanced Conversions** — `gtag('set','user_data', …)` with the **raw** email / phone / address (Google hashes
   them client-side), fired before the conversion.
-- **Consent Mode v2** — inherited from `silvershop/cookieconsent` (which emits the `default` + `update` and maps the
+- **Consent Mode v2** — inherited from `silvershop-suite/cookieconsent` (which emits the `default` + `update` and maps the
   categories to `ad_storage` / `ad_user_data` / `ad_personalization` / `analytics_storage`). This connector does not
   reinvent it; it only ensures `gtag` loads + the events fire. GA4 is gated on **`statistics`**, the Ads conversion +
   Enhanced Conversions on **`marketing`**.
@@ -16,7 +16,7 @@ It implements the core's `ConversionProvider` seam for Google, client-side via `
 ## Install
 
 ```bash
-composer require silvershop/conversion-tracking-google
+composer require silvershop-suite/conversion-tracking-google
 ```
 
 Registers + switches itself on, inert until configured. Set the environment:
@@ -45,7 +45,7 @@ v1 is **client-side only**. The server-side path (Google's **Data Manager API** 
 retired Ads-API offline upload) is v2, so this connector reports no server-side support; the core never enqueues a
 server dispatch for it.
 
-> **Consent Mode SSR-default note.** `silvershop/cookieconsent` emits the server-side `gtag('consent','default',
+> **Consent Mode SSR-default note.** `silvershop-suite/cookieconsent` emits the server-side `gtag('consent','default',
 > …denied)` in `<head>` only when the `GA_CODE` / `GTM_CODE` env var is set; otherwise its JS runtime emits the
 > default-denied before any tag activates. For a belt-and-suspenders SSR default, set one of those env vars. This
 > connector does not emit a competing default.
@@ -67,7 +67,7 @@ composer stan    # PHPStan (silverstan, level 5)
 composer test    # PHPUnit
 ```
 
-`silvershop/conversion-tracking` is an RVXD module resolved from the composer `repositories` VCS entry (a private
+`silvershop-suite/conversion-tracking` is an RVXD module resolved from the composer `repositories` VCS entry (a private
 core repo needs a GitHub token — see the CI workflow).
 
 ## Licence

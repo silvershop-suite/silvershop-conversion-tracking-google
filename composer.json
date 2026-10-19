@@ -1,6 +1,6 @@
 {
-    "name": "silvershop/conversion-tracking-google",
-    "description": "Google connector for silvershop/conversion-tracking: GA4 ecommerce events (view_item / add_to_cart / begin_checkout / purchase) via gtag, a Google Ads conversion on purchase, Enhanced Conversions (hashed email, hashed client-side by Google) and Consent Mode v2 inherited from silvershop/cookieconsent.",
+    "name": "silvershop-suite/conversion-tracking-google",
+    "description": "Google connector for silvershop-suite/conversion-tracking: GA4 ecommerce events (view_item / add_to_cart / begin_checkout / purchase) via gtag, a Google Ads conversion on purchase, Enhanced Conversions (hashed email, hashed client-side by Google) and Consent Mode v2 inherited from silvershop-suite/cookieconsent.",
     "type": "silverstripe-vendormodule",
     "keywords": ["silverstripe", "silvershop", "ecommerce", "conversion-tracking", "google", "ga4", "gtag", "google-ads"],
     "license": "BSD-3-Clause",
@@ -18,7 +18,7 @@
         "php": "^8.3",
         "silverstripe/framework": "^6",
         "silverstripe/cms": "^6",
-        "silvershop/conversion-tracking": "dev-main"
+        "silvershop-suite/conversion-tracking": "dev-main"
     },
     "require-dev": {
         "cambis/silverstan": "^2.1",
