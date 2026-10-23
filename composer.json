@@ -18,7 +18,7 @@
         "php": "^8.3",
         "silverstripe/framework": "^6",
         "silverstripe/cms": "^6",
-        "silvershop-suite/conversion-tracking": "dev-main"
+        "silvershop-suite/conversion-tracking": "^1.0"
     },
     "require-dev": {
         "cambis/silverstan": "^2.1",
