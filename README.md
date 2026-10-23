@@ -1,6 +1,6 @@
 # SilverShop Conversion Tracking — Google connector
 
-Google connector for [`silvershop-suite/conversion-tracking`](https://github.com/silvershop/silvershop-conversion-tracking).
+Google connector for [`silvershop-suite/conversion-tracking`](https://github.com/silvershop-suite/silvershop-conversion-tracking).
 It implements the core's `ConversionProvider` seam for Google, client-side via `gtag`:
 
 - **GA4 ecommerce** — `view_item` / `add_to_cart` / `begin_checkout` / `purchase`, with `items[]`, `value`,
