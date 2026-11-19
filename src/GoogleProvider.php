@@ -15,7 +15,7 @@ use SilverStripe\Core\Injector\Injectable;
 /**
  * Google implementation of the conversion-tracking {@see ConversionProvider}: GA4 ecommerce events + a Google Ads
  * conversion on purchase + Enhanced Conversions, all via client-side `gtag`. Consent Mode v2 is inherited from
- * silvershop/cookieconsent (which emits the default/update + maps the categories to the four signals); this
+ * silvershop-suite/cookieconsent (which emits the default/update + maps the categories to the four signals); this
  * connector only ensures `gtag` loads + the events fire. GA4 events are gated on the `statistics` category, the
  * Google Ads conversion + Enhanced Conversions on `marketing`.
  *
