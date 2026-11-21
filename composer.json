@@ -32,12 +32,6 @@
         "lint": "vendor/bin/phpcs",
         "lint:fix": "vendor/bin/phpcbf"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/silvershop-suite/silvershop-conversion-tracking.git"
-        }
-    ],
     "extra": {
         "branch-alias": {
             "dev-main": "1.x-dev"

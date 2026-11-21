@@ -67,9 +67,6 @@ composer stan    # PHPStan (silverstan, level 5)
 composer test    # PHPUnit
 ```
 
-`silvershop-suite/conversion-tracking` is an RVXD module resolved from the composer `repositories` VCS entry (a private
-core repo needs a GitHub token — see the CI workflow).
-
 ## Licence
 
 BSD-3-Clause.
